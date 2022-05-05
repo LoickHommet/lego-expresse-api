@@ -14,7 +14,7 @@ function myErrorMiddleware(err, req, res, next){
 
 app.get('/', (req, res, next) => {
 	try {
-		throw new Error('ceci est un bug dans la route 1');
+		throw new Error('ceci est un bug');
 	}catch(err){
 		next(err)
 	}
